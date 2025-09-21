@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 
 import drumSound from "../assets/sounds/joke-drum-effect.mp3";
@@ -23,11 +23,11 @@ const JokeGen = () => {
   };
 
   // Sound effect mapping
-  const sounds = [
+  const sounds = React.useMemo(() => [
     { key: "a", audio: new Audio(drumSound) },
     { key: "s", audio: new Audio(laughTrack) },
     { key: "d", audio: new Audio(cricket) },
-  ];
+  ], []);
 
   // Play sound function
   const playSound = (audio) => {
@@ -36,16 +36,17 @@ const JokeGen = () => {
   };
 
   // Handle keypress
-  const handleKeyPress = (e) => {
+  const handleKeyPress = useCallback((e) => {
     const sound = sounds.find((s) => s.key === e.key.toLowerCase());
     if (sound) playSound(sound.audio);
-  };
+  }, [sounds]);
+
 
   useEffect(() => {
     fetchJoke();
     window.addEventListener("keydown", handleKeyPress);
     return () => window.removeEventListener("keydown", handleKeyPress);
-  }, []);
+  }, [handleKeyPress]);
 
   return (
     <div
