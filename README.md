@@ -1,75 +1,92 @@
-# Getting Started with Create React App
+# Joke Generator 🎤😂
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fun, interactive **Joke Generator** built with React and Tailwind CSS!  
+Fetches jokes from the [icanhazdadjoke API](https://icanhazdadjoke.com/) and lets you play sound effects like drum hits, audience laughter, and crickets for extra comedy flair.  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Fetches a random dad joke on page load or when clicking the **New Joke** button.  
+- Three interactive sound effect buttons:  
+  - 🥁 Drum  
+  - 😂 Audience laughter  
+  - 🦗 Crickets  
+- Keyboard shortcuts for sound effects:  
+  - **A** → Drum  
+  - **S** → Laugh track  
+  - **D** → Crickets  
+- Responsive layout with a visually appealing background image.  
+- Bottom-right links to submit a new joke or open a pull request.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- **React** – UI library for building the app.  
+- **Tailwind CSS** – For styling and responsive design.  
+- **Axios** – For fetching jokes from the API.  
+- **icanhazdadjoke API** – Source of dad jokes.  
+- **Pixabay** – Source of free sound effects.  
+- **AI (Gemini)** – Used to generate the background image.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Credits
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Sound Effects**:  
+  - Drum / Joke effect by [chieuk](https://pixabay.com/users/chieuk-46505609/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=250777) from [Pixabay](https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=250777)  
+  - Laugh track by [ArtificiallyInspired](https://pixabay.com/users/artificiallyinspired-30441549/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=353985) from [Pixabay](https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=353985)  
+  - Crickets sourced from [Pixabay](https://pixabay.com/sound-effects/)  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Background Image**: Generated using AI (Gemini).  
+- **Jokes API**: [icanhazdadjoke](https://icanhazdadjoke.com/)  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Installation & Running Locally
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Make sure you have [Node.js](https://nodejs.org/) installed. This project uses **Yarn** as the package manager.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+git clone https://github.com/henry-doan/joke-generator.git
+cd joke-generator
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install dependencies:
 
-## Learn More
+```bash
+yarn
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Start the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+yarn start
+```
 
-### Code Splitting
+The app should now be running at http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Click New Joke to fetch a random dad joke.
 
-### Making a Progressive Web App
+- Click the sound buttons or press A, S, or D on your keyboard to play sound effects.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Submit a joke or contribute via the links in the bottom-right corner.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## More Projects
 
-### Deployment
+Check out more of my projects at: https://github.com/henry-doan
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+--- 
 
-### `npm run build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-Sound Effect by <a href="https://pixabay.com/users/chieuk-46505609/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=250777">chieuk</a> from <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=250777">Pixabay</a>
-
-Sound Effect by <a href="https://pixabay.com/users/artificiallyinspired-30441549/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=353985">ArtificiallyInspired</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=353985">Pixabay</a>
+This project is open source and free to use. Please credit the sound and image creators as noted above.

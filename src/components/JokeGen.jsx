@@ -103,7 +103,7 @@ const JokeGen = () => {
           Wanna submit a new joke? Go here
         </a>
         <a
-          href="https://github.com/your-repo" // replace with your PR link
+          href="https://github.com/henry-doan/joke-gen-v3" // replace with your PR link
           target="_blank"
           rel="noopener noreferrer"
           className="bg-white/80 hover:bg-white text-black px-3 py-1 rounded transition"
